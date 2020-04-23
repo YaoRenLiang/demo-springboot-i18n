@@ -10,4 +10,5 @@
 
 · 点击按钮，如下图所示：
 
-![Image text](https://github.com/zzuljs/CppLearning/blob/master/CppLearning/raw/master/Itachi.jpg)
+![Image text](https://https://github.com/YaoRenLiang/demo-springboot-i18n/blob/master/src/main/resources/static/imgs/904ACF55-C4FF-49EE-965F-4B6870F708C6.png)
+
