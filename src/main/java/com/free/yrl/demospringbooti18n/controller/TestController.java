@@ -7,6 +7,7 @@ import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -24,12 +25,12 @@ import static com.free.yrl.demospringbooti18n.base.ResponseMessage.setErrorResul
 @RequestMapping("/test")
 public class TestController extends BaseController {
 
-	@ApiOperation("测试事件")
+	@ApiOperation("国际化测试")
 	@ApiImplicitParams({
 			@ApiImplicitParam(name = "accept-language", value = "语言", dataType = "int", example = "en", required = true, paramType = "header"),
 			@ApiImplicitParam(name = "code", value = "测试返回码", dataType = "int", example = "-100", required = true),
 	})
-	@PostMapping("/test")
+	@GetMapping("/test")
 	public ResponseMessage<Object> test(Integer code) {
 		return setErrorResult(code);
 	}
