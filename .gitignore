@@ -29,3 +29,10 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### 自定义 ###
+*.log
+.mvn/
+.idea/
+mvnw
+mvnw.cmd

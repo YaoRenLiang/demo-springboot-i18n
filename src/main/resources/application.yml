@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  mvc:
+    servlet:
+      load-on-startup: 1
+  application:
+    name: demo-springboot-i18n
+  main:
+    allow-bean-definition-overriding: true
+  profiles:
+    active: dev
