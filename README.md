@@ -8,4 +8,6 @@
 
 · 找到项目中com.free.yrl.demospringbooti18n.DemoSpringbootI18nApplication文件
 
-· 点击
+· 点击按钮，如下图所示：
+
+![Image text](https://github.com/zzuljs/CppLearning/blob/master/CppLearning/raw/master/Itachi.jpg)
