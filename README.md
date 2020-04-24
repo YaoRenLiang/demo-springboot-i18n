@@ -4,7 +4,7 @@ Java基于Spring boot的i18n国际化demo
 
 · jdk相关配置跳过
 
-· 倒入idea，等待项目、maven jar都加载完成
+· 导入idea，等待项目、maven jar都加载完成
 
 · 找到项目中com.free.yrl.demospringbooti18n.DemoSpringbootI18nApplication文件
 
