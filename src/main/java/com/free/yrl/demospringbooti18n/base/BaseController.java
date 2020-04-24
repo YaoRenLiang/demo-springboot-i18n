@@ -1,4 +1,4 @@
-package com.free.yrl.demospringbooti18n.common;
+package com.free.yrl.demospringbooti18n.base;
 
 import javax.servlet.http.HttpServletRequest;
 import java.math.BigDecimal;
