@@ -1,6 +1,6 @@
-Java基于Spring boot的i18n国际化demo
+**Java基于Spring boot的i18n国际化demo**
 
-启动步骤：
+**一、启动步骤：**
 
 · jdk相关配置跳过
 
@@ -30,3 +30,5 @@ Java基于Spring boot的i18n国际化demo
 
 ![Image text](https://github.com/YaoRenLiang/demo-springboot-i18n/blob/master/src/main/resources/static/imgs/5.png)
 
+
+**二、代码详解：**
