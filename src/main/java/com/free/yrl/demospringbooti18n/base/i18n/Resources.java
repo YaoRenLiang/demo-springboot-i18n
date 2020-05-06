@@ -24,12 +24,13 @@ public class Resources {
 	 * 获取国际化信息
 	 */
 	public static String getMessage(String key, Object... params) {
-		/*获取语言，这个语言是从header中的Accept-Language中获取的，会根据Accept-Language的值生成符合规则的locale，如zh、pt、en等*/
+		/*获取语言，这个语言是从header中的Accept-Language中获取的，
+		会根据Accept-Language的值生成符合规则的locale，如zh、pt、en等*/
 		Locale locale = LocaleContextHolder.getLocale();
 		ResourceBundle message = MESSAGES.get(locale.getLanguage());
 		if (message == null) {
 			synchronized (MESSAGES) {
-				/*在这里读取配置信息*/
+				// 在这里读取配置信息
 				message = MESSAGES.get(locale.getLanguage());
 				if (message == null) {
 					message = ResourceBundle.getBundle("i18n/ResponseMessage", locale);
@@ -37,7 +38,7 @@ public class Resources {
 				}
 			}
 		}
-		/*此处获取并返回message*/
+		// 此处获取并返回message
 		if (isEmpty(params)) {
 			return String.format(message.getString(key), params);
 		}
