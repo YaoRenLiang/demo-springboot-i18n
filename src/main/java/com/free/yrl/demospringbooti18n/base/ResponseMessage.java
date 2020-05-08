@@ -44,29 +44,29 @@ public class ResponseMessage<T> implements Serializable {
 	}
 
 	/*返回错误*/
-	public static <T> ResponseMessage<T> setErrorResult(ResponseMessageConstants constants) {
+	public static <T> ResponseMessage<T> error(ResponseMessageConstants constants) {
 		Integer key = constants.getKey();
 		return new ResponseMessage(key, msg(key), null);
 	}
 
 	/*返回错误*/
-	public static <T> ResponseMessage<T> setErrorResult(Integer code) {
+	public static <T> ResponseMessage<T> error(Integer code) {
 		return new ResponseMessage(code, msg(code), null);
 	}
 
 	/*返回错误*/
-	public static <T> ResponseMessage<T> setErrorResult(Integer code, String message) {
+	public static <T> ResponseMessage<T> error(Integer code, String message) {
 		return new ResponseMessage(code, msg(code, message), null);
 	}
 
 	/*返回成功*/
-	public static <T> ResponseMessage<T> setSuccessResult() {
+	public static <T> ResponseMessage<T> success() {
 		Integer key = ResponseMessageConstants.SUCCESSFULOPERATION.getKey();
 		return new ResponseMessage(key, msg(key), null);
 	}
 
 	/*返回成功*/
-	public static <T> ResponseMessage<T> setSuccessResult(Object data) {
+	public static <T> ResponseMessage<T> success(Object data) {
 		Integer key = ResponseMessageConstants.SUCCESSFULOPERATION.getKey();
 		if (data instanceof String || data instanceof Integer || data instanceof Date) {
 			Map map = Maps.newHashMap();

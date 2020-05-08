@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import static com.free.yrl.demospringbooti18n.base.ResponseMessage.setErrorResult;
+import static com.free.yrl.demospringbooti18n.base.ResponseMessage.error;
 
 /**
  * 测试相关操作
@@ -31,7 +31,7 @@ public class TestController extends BaseController {
 	})
 	@GetMapping("/test")
 	public ResponseMessage<Object> test(Integer code) {
-		return setErrorResult(code);
+		return error(code);
 	}
 
 }
