@@ -1,12 +1,12 @@
-**Java基于Spring boot的i18n国际化demo**
+**Java 基于 Spring boot 的 i18n 国际化 Demo**
 
 **一、启动步骤：**
 
-· jdk相关配置跳过
+· Jdk 相关配置跳过
 
-· 导入idea，等待项目、maven jar都加载完成
+· 导入 Idea，等待 Maven、Jar 都加载完成
 
-· 找到项目中com.free.yrl.demospringbooti18n.DemoSpringbootI18nApplication文件
+· 找到项目中 com.free.yrl.demospringbooti18n.DemoSpringbootI18nApplication 文件
 
 · 点击按钮，如下图所示：
 
@@ -24,7 +24,7 @@
 
 ![Image text](https://github.com/YaoRenLiang/demo-springboot-i18n/blob/master/src/main/resources/static/imgs/4.png)
 
-（en-英语、ja-日语、zh-中文），以后增加新的语种只需要copy一份文件对应内容更改就行。
+（en-英语、ja-日语、zh-中文），以后增加新的语种只需要 Copy 一份文件对应内容更改就行。
 
 · 目前自定义的错误码，如下图所示：
 
