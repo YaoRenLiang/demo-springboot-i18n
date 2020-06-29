@@ -32,6 +32,7 @@ public class ResponseMessage<T> implements Serializable {
 	private final T data;
 
 	private ResponseMessage(Integer code, String message, T data) {
+
 		this.code = code;
 		this.message = message;
 		this.data = data;
@@ -39,8 +40,9 @@ public class ResponseMessage<T> implements Serializable {
 			this.code = ResponseMessageConstants.SERVICE_EXCEPTION.getKey();
 		}
 		if (isEmpty(message)) {
-			this.message = ResponseMessageConstants.SERVICE_EXCEPTION.getValue();
+			this.message = ResponseMessageConstants.getValueByKey(getCode());
 		}
+
 	}
 
 	/**
